@@ -1,0 +1,4 @@
+<%- include("partials/header.ejs") %> <% if (locals.isHome) { %> <%-
+include("partials/home.ejs") %> <% } else {%> <% if (locals.author) { %> <%-
+include("partials/post.ejs") %> <% } else {%> <%- include("partials/form.ejs")
+%> <% }%> <% }%> <%- include("partials/footer.ejs") %>
